@@ -1,0 +1,190 @@
+@import "type";
+@import "icons";
+@import "utility";
+
+@import "slick";
+
+/* ==========================================================================
+   Browser Upgrade - Shows a update message for outdated browsers (<= IE11)
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: map-get($foundation-palette, primary);
+  color: $white;
+  padding: 1em;
+  & a {
+    color: $white;
+  }
+}
+
+/* ==========================================================================
+   Header - Logo, Hero and top navigation
+========================================================================== */
+.main-header {
+  width: 100%;
+  height: 767px;
+  background: map-get($foundation-palette, secondary) url("../img/header-bg.jpg") center no-repeat fixed;
+  background-size: cover;
+}
+
+.logo-furniture {
+  margin-top: 35px;
+  &:hover {
+    transition: color .1s linear;
+    color: map-get($foundation-palette, primary);
+  }
+}
+
+.main-navigation {
+  margin-top: 25px;
+  & ul {
+    padding: 0;
+  }
+  & li {
+    display: inline-block;
+    margin-left: 35px;
+    vertical-align: middle;
+  }
+
+}
+
+.hero-title { margin-top: 140px; }
+
+@include breakpoint(small only) {
+  .main-navigation {
+    & li {
+      margin-left: 5px;
+    }
+  }
+  .hero-title,
+  .logo-furniture {
+    font-size: 2.75rem
+  }
+}
+
+/* ==========================================================================
+   Gallery and Filter
+========================================================================== */
+.gallery-section { padding-bottom: 110px; }
+
+.filter-form {
+  margin-bottom: 100px;
+  padding: 10px 0;
+  border-bottom: 1px solid $medium-gray;
+}
+
+.filter-checkboxes {
+  width: 27px;
+  height: 27px;
+  position: relative;
+  background: #dfdfdf;
+  @include radius(3px);
+  label {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 3px;
+    top: 3px;
+    background: $white;
+    cursor: pointer;
+    &:after {
+      position: absolute;
+      content: '';
+      width: 15px;
+      height: 9px;
+      top: 4px;
+      left: 3px;
+      border: 3px solid map-get($foundation-palette, secondary);
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transition: all 0.1s linear;
+      transform: rotate(-45deg) scale(1.5);
+    }
+  }
+  input[type=checkbox] {
+    visibility: hidden;
+    &:checked + label:after {
+      opacity: 1;
+      transform: rotate(-45deg) scale(1);
+    }
+  }
+}
+
+.product-cart {
+  margin-bottom: 70px;
+  & > div:first-of-type {
+    padding: 20px;
+    background-color: $white;
+    &:hover {
+      transition: all 0.1s linear;
+      box-shadow: 0 5px 30px -10px rgba(0,0,0,1);
+    }
+    &:hover .product-button {
+      visibility: visible;
+    }
+  }
+}
+
+.product-breadcrumb {
+  margin: 0;
+  padding: 0;
+  & li {
+    display: inline-block;
+    &:not(:last-child):after {
+      content: ' / ';
+      color: $medium-gray;
+      @include font-size(12px, 14px);
+      font-family: 'Rubik', Arial, sans-serif;
+      font-weight: 700;
+      vertical-align: middle;
+    }
+    & a:hover {
+      color: scale-color($medium-gray, $lightness: -10%);
+    }
+  }
+}
+
+.product-button {
+  @extend .button;
+  padding: 0.413em 1em;
+  visibility: hidden;
+  & span {
+    vertical-align: middle;
+  }
+}
+
+/* ==========================================================================
+   Footer - Copyright
+========================================================================== */
+.footer-copyright {
+  width: 100%;
+  height: 160px;
+  background: $light-gray;
+  & h6 {
+    margin-top: 55px;
+    & span {
+      vertical-align: middle;
+    }
+  }
+}
+
+.footer-about-us {
+  width: 100%;
+  height: 550px;
+  background: map-get($foundation-palette, primary) url("../img/footer-bg.jpg") center 120px no-repeat fixed;
+  background-size: cover;
+}
+
+.about-us-title {
+  margin-top: 90px;
+  &:after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 10px;
+    background-color: #e03a6a;
+    margin: 25px auto 40px auto;
+  }
+}

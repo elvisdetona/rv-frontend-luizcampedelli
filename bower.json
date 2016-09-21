@@ -1,0 +1,19 @@
+{
+  "name": "rv-frontend",
+  "version": "1.0.0",
+  "authors": [
+    "Luiz Campedelli <campedelliluiz@gmail.com>"
+  ],
+  "description": "Red Ventures frontend test",
+  "dependencies": {
+    "foundation-sites": "~6.2.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}

@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Utility Classes
+   A handful of helpful classes to add certain behaviors to elements.
+========================================================================== */
+
+/*
+  Use this to control border radius.
+  $radius - Default: 10px
+  'gulp-autoprefixer' handle crossbrowsers issues
+*/
+@mixin radius($radius: 10px) {
+  @if $radius {
+    border-radius: $radius;
+  }
+}
+
+.pointer { cursor: pointer; }
+
+// Text Classes
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }
+.uppercase { text-transform: uppercase; }  // Avoid to use caps on html #a11y
+
+// Position
+.relative { position: relative; }
+.absolute { position: absolute; }
+
+// Link reset
+a { text-decoration: none; }
+
+// List reset
+li { list-style: none; }
+
+// Use this classes to align your elements
+$vgrid-1 : 5;
+$vgrid-2 : 10;
+$vgrid-3 : 15;
+$vgrid-4 : 20;
+$vgrid-5 : 25;
+
+.reset { margin: 0; }
+
+.top5 { margin-top: $vgrid-1 + px; }
+.top10 { margin-top: $vgrid-2 + px; }
+.top15 { margin-top: $vgrid-3 + px; }
+.top20 { margin-top: $vgrid-4 + px; }
+.top25 { margin-top: $vgrid-5 + px; }
+
+.left5 { margin-left: $vgrid-1 + px; }
+.left10 { margin-left: $vgrid-2 + px; }
+.left15 { margin-left: $vgrid-3 + px; }
+.left20 { margin-left: $vgrid-4 + px; }
+.left25 { margin-left: $vgrid-5 + px; }
+
+.bottom5 { margin-bottom: $vgrid-1 + px; }
+.bottom10 { margin-bottom: $vgrid-2 + px; }
+.bottom15 { margin-bottom: $vgrid-3 + px; }
+.bottom20 { margin-bottom: $vgrid-4 + px; }
+.bottom25 { margin-bottom: $vgrid-5 + px; }
+
+.right5 { margin-right: $vgrid-1 + px; }
+.right10 { margin-right: $vgrid-2 + px; }
+.right15 { margin-right: $vgrid-3 + px; }
+.right20 { margin-right: $vgrid-4 + px; }
+.right25 { margin-right: $vgrid-5 + px; }
+
+.padding5 { padding: $vgrid-1 + px; }
+.padding10 { padding: $vgrid-2 + px; }
+.padding15 { padding: $vgrid-3 + px; }
+.padding20 { padding: $vgrid-4 + px; }
+.padding25 { padding: $vgrid-5 + px; }

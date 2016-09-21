@@ -1,0 +1,97 @@
+/* ==========================================================================
+   Typography - Styles, sizes and colors
+========================================================================== */
+
+/* normal */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v2/p_PvaTv0YzIEJlEVv30xK6CWcynf_cDxXwCLxiixG1c.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* medium */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Rubik Medium'), local('Rubik-Medium'), url(https://fonts.gstatic.com/s/rubik/v2/IUSlgBbgyuDQpy87mBOAc3YhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* bold */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Rubik Bold'), local('Rubik-Bold'), url(https://fonts.gstatic.com/s/rubik/v2/0hS39AKxpJlEXQF3mVPgrnYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+%normal {
+  font-family: 'Rubik', 'Myriad Pro', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.condensed {
+  font-family: 'Rubik', 'Myriad Pro', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+.bold {
+  font-family: 'Rubik', 'Myriad Pro', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+// Convert px to rem
+@function calculateRem($px) {
+  $pxtorem: $px / 16px;
+  @return $pxtorem * 1rem;
+}
+
+@mixin font-size($font-size, $line-height) {
+  font-size: calculateRem($font-size);
+  line-height: calculateRem($line-height);
+}
+
+// Font Sizes
+.font12 {
+  @include font-size(12px, 14px);
+  @extend %normal;
+}
+.font14 {
+  @include font-size(14px, 18px);
+  @extend %normal;
+}
+.font16 {
+  @include font-size(16px, 20px);
+  @extend %normal;
+}
+.font18 {
+  @include font-size(18px, 22px);
+  @extend %normal;
+}
+.font20 {
+  @include font-size(20px, 26px);
+  @extend %normal;
+}
+.font25 {
+  @include font-size(25px, 29px);
+  @extend %normal;
+}
+.font30 {
+  @include font-size(30px, 34px);
+  @extend %normal;
+}
+.font60 {
+  @include font-size(60px, 64px);
+  @extend %normal;
+}
+
+// Text Colors
+.text-white { color: $white; }
+.text-black { color: $black; }
+.text-dark-gray { color: $dark-gray; }
+.text-medium-gray { color: $medium-gray; }
+.text-purple { color: map-get($foundation-palette, primary); }
+.text-limegreen { color: map-get($foundation-palette, secondary); }

@@ -1,0 +1,405 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RV - Frontend</title>
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body>
+    <!--[if lte IE 8]>
+    <p class="browserupgrade">You are using an outdated browser. Please <a class="text-white bold" href="http://browsehappy.com/" title="click to update">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <header class="main-header">
+        <div class="row">
+            <div class="columns small-12">
+                <a class="float-left font60 text-white icon-furniture-logo logo-furniture" href="#" title="Lorem ipsum dolor sit amet"></a>
+                <nav class="float-right main-navigation">
+                    <ul>
+                        <li><a class="condensed font16 text-purple uppercase" href="#" title="Home Page">Home</a></li>
+                        <li><a class="condensed font16 text-purple uppercase" href="#" title="Our products">Products</a></li>
+                        <li><a class="condensed font16 text-purple uppercase" href="#" title="Send us an email">Contact</a></li>
+                        <li><a href="#" title="Shop list"><span class="font30 text-purple icon-shopcart"></span></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="columns float-right small-12 medium-7 large-6">
+                <h1 class="reset small-12 text-purple condensed font60 uppercase hero-title">Collection 2016</h1>
+                <p class="left10 reset small-12 top10 text-purple font20">Some cool text here about the new collection of <br/> design furniture 2016</p>
+                <div class="left10 small-12">
+                    <a class="float-left button round small-4 top20 condensed font14 uppercase" href="#" title="Buy the new collection here">Buy now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="gallery-section">
+        <div class="row">
+            <div class="small-12 large-11 large-centered">
+                <div class="columns small-12">
+                    <form class="float-left small-12 filter-form" action="">
+
+                        <div class="float-left small-12 medium-7 large-8">
+                            <div class="float-left top25 small-12 large-6">
+                                <span class="float-left top5 right20 text-black font16 condensed uppercase">Type:</span>
+                                <div class="float-left">
+                                    <div class="float-left right15 filter-checkboxes">
+                                        <input type="checkbox" id="armchairs"/>
+                                        <label for="armchairs"></label>
+                                    </div>
+                                    <label for="armchairs" class="float-left top5 right20 text-dark-gray font16 uppercase pointer">Armchairs</label>
+                                    <div class="float-left left20 right15 filter-checkboxes">
+                                        <input type="checkbox" id="chairs"/>
+                                        <label for="chairs"></label>
+                                    </div>
+                                    <label for="chairs" class="float-left top5 text-dark-gray font16 uppercase pointer">Chairs</label>
+                                </div>
+                            </div>
+
+                            <div class="float-left top25 small-12 large-6">
+                                <span class="float-left top5 right20 text-black font16 condensed uppercase">Material:</span>
+                                <div class="float-left">
+                                    <div class="float-left right15 filter-checkboxes">
+                                        <input type="checkbox" id="wood"/>
+                                        <label for="wood"></label>
+                                    </div>
+                                    <label for="wood" class="float-left top5 right20 text-dark-gray font16 uppercase pointer">Wood</label>
+                                    <div class="float-left left20 right15 filter-checkboxes">
+                                        <input type="checkbox" id="foam"/>
+                                        <label for="foam"></label>
+                                    </div>
+                                    <label for="foam" class="float-left top5 text-dark-gray font16 uppercase pointer">Foam</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="float-left top15 small-12 medium-5 large-4">
+                            <button class="float-right button round small-6 secondary condensed font14 uppercase pointer">See all products</button>
+                        </div>
+                    </form>
+                </div>
+
+                <p class="float-left small-12 text-center text-dark-gray font20 uppercase">New Armchairs</p>
+                <div class="float-left small-12 swipe-gallery" role="region" aria-label="Products Gallery">
+                    <div class="columns top20 small-12 medium-6 large-3 product-cart">
+                        <div>
+                            <ul class="product-breadcrumb">
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="all armchairs">Armchairs</a></li>
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="items made ​​of wood">Wood</a></li>
+                            </ul>
+                            <div class="text-center top20">
+                                <img src="../img/products/modern-black-armchair.jpg" alt="a modern armchair made of wood"/>
+                            </div>
+                            <p class="small-12 text-center text-dark-gray font16">Modern Black Armchair <br/> <span class="font18 text-black">$ 350,00</span></p>
+                            <button class="reset button secondary product-button round small-push-2 small-8 condensed font14 uppercase pointer">
+                                <span class="font18 text-white icon-shopcart right15"></span>
+                                buy now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="columns top20 small-12 medium-6 large-3 product-cart">
+                        <div>
+                            <ul class="product-breadcrumb">
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="all armchairs">Armchairs</a></li>
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="items made ​​with foam">Foam</a></li>
+                            </ul>
+                            <div class="text-center top20">
+                                <img src="../img/products/modern-gray-armchair.jpg" alt="a modern gray armchair"/>
+                            </div>
+                            <p class="small-12 text-center text-dark-gray font16">Modern Gray Armchair <br/> <span class="font18 text-black">$ 350,00</span></p>
+                            <button class="reset button secondary product-button round small-push-2 small-8 condensed font14 uppercase pointer">
+                                <span class="font18 text-white icon-shopcart right15"></span>
+                                buy now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="columns top20 small-12 medium-6 large-3 product-cart">
+                        <div>
+                            <ul class="product-breadcrumb">
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="all armchairs">Armchairs</a></li>
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="items made ​​with foam">Foam</a></li>
+                            </ul>
+                            <div class="text-center top20">
+                                <img src="../img/products/light-blue-armchair.jpg" alt="a modern armchairs made with wood"/>
+                            </div>
+                            <p class="small-12 text-center text-dark-gray font16">Light Blue Armchair <br/> <span class="font18 text-black">$ 350,00</span></p>
+                            <button class="reset button secondary product-button round small-push-2 small-8 condensed font14 uppercase pointer">
+                                <span class="font18 text-white icon-shopcart right15"></span>
+                                buy now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="columns top20 small-12 medium-6 large-3 product-cart">
+                        <div>
+                            <ul class="product-breadcrumb">
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="all armchairs">Armchairs</a></li>
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="items made ​​of wood">Wood</a></li>
+                            </ul>
+                            <div class="text-center top20">
+                                <img src="../img/products/black-wood-armchair.jpg" alt="a modern armchairs made of wood"/>
+                            </div>
+                            <p class="small-12 text-center text-dark-gray font16">Black and Wood Armchair <br/> <span class="font18 text-black">$ 350,00</span></p>
+                            <button class="reset button secondary product-button round small-push-2 small-8 condensed font14 uppercase pointer">
+                                <span class="font18 text-white icon-shopcart right15"></span>
+                                buy now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="columns top20 small-12 medium-6 large-3 product-cart">
+                        <div>
+                            <ul class="product-breadcrumb">
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="all armchairs">Armchairs</a></li>
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="items made ​​of wood">Wood</a></li>
+                            </ul>
+                            <div class="text-center top20">
+                                <img src="../img/products/modern-black-armchair.jpg" alt="a modern armchair made of wood"/>
+                            </div>
+                            <p class="small-12 text-center text-dark-gray font16">Modern Black Armchair <br/> <span class="font18 text-black">$ 350,00</span></p>
+                            <button class="reset button secondary product-button round small-push-2 small-8 condensed font14 uppercase pointer">
+                                <span class="font18 text-white icon-shopcart right15"></span>
+                                buy now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="columns top20 small-12 medium-6 large-3 product-cart">
+                        <div>
+                            <ul class="product-breadcrumb">
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="all armchairs">Armchairs</a></li>
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="items made ​​with foam">Foam</a></li>
+                            </ul>
+                            <div class="text-center top20">
+                                <img src="../img/products/modern-gray-armchair.jpg" alt="a modern gray armchair"/>
+                            </div>
+                            <p class="small-12 text-center text-dark-gray font16">Modern Gray Armchair <br/> <span class="font18 text-black">$ 350,00</span></p>
+                            <button class="reset button secondary product-button round small-push-2 small-8 condensed font14 uppercase pointer">
+                                <span class="font18 text-white icon-shopcart right15"></span>
+                                buy now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="columns top20 small-12 medium-6 large-3 product-cart">
+                        <div>
+                            <ul class="product-breadcrumb">
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="all armchairs">Armchairs</a></li>
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="items made ​​with foam">Foam</a></li>
+                            </ul>
+                            <div class="text-center top20">
+                                <img src="../img/products/light-blue-armchair.jpg" alt="a modern armchairs made with wood"/>
+                            </div>
+                            <p class="small-12 text-center text-dark-gray font16">Light Blue Armchair <br/> <span class="font18 text-black">$ 350,00</span></p>
+                            <button class="reset button secondary product-button round small-push-2 small-8 condensed font14 uppercase pointer">
+                                <span class="font18 text-white icon-shopcart right15"></span>
+                                buy now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="columns top20 small-12 medium-6 large-3 product-cart">
+                        <div>
+                            <ul class="product-breadcrumb">
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="all armchairs">Armchairs</a></li>
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="items made ​​of wood">Wood</a></li>
+                            </ul>
+                            <div class="text-center top20">
+                                <img src="../img/products/black-wood-armchair.jpg" alt="a modern armchairs made of wood"/>
+                            </div>
+                            <p class="small-12 text-center text-dark-gray font16">Black and Wood Armchair <br/> <span class="font18 text-black">$ 350,00</span></p>
+                            <button class="reset button secondary product-button round small-push-2 small-8 condensed font14 uppercase pointer">
+                                <span class="font18 text-white icon-shopcart right15"></span>
+                                buy now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="float-left small-12 text-center text-dark-gray font20 uppercase">Best of 2016</p>
+                <div class="float-left small-12 swipe-gallery" role="region" aria-label="Products Gallery">
+                    <div class="columns top20 small-12 medium-6 large-3 product-cart">
+                        <div>
+                            <ul class="product-breadcrumb">
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="all armchairs">Chair</a></li>
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="items made ​​of wood">Wood</a></li>
+                            </ul>
+                            <div class="text-center top20">
+                                <img src="../img/products/wood-design-chair.jpg" alt="a modern armchairs made of wood"/>
+                            </div>
+                            <p class="small-12 text-center text-dark-gray font16">Wood Design Chair <br/> <span class="font18 text-black">$ 150,00</span></p>
+                            <button class="reset button secondary product-button round small-push-2 small-8 condensed font14 uppercase pointer">
+                                <span class="font18 text-white icon-shopcart right15"></span>
+                                buy now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="columns top20 small-12 medium-6 large-3 product-cart">
+                        <div>
+                            <ul class="product-breadcrumb">
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="all armchairs">Chair</a></li>
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="items made ​​of wood">Foam</a></li>
+                            </ul>
+                            <div class="text-center top20">
+                                <img src="../img/products/premium-design-chair.jpg" alt="a modern armchairs made of wood"/>
+                            </div>
+                            <p class="small-12 text-center text-dark-gray font16">Premium Design Chair <br/> <span class="font18 text-black">$ 150,00</span></p>
+                            <button class="reset button secondary product-button round small-push-2 small-8 condensed font14 uppercase pointer">
+                                <span class="font18 text-white icon-shopcart right15"></span>
+                                buy now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="columns top20 small-12 medium-6 large-3 product-cart">
+                        <div>
+                            <ul class="product-breadcrumb">
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="all armchairs">Chair</a></li>
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="items made ​​of wood">Wood</a></li>
+                            </ul>
+                            <div class="text-center top20">
+                                <img src="../img/products/white-wood-chair.jpg" alt="a modern armchairs made of wood"/>
+                            </div>
+                            <p class="small-12 text-center text-dark-gray font16">White and Wood Chair <br/> <span class="font18 text-black">$ 150,00</span></p>
+                            <button class="reset button secondary product-button round small-push-2 small-8 condensed font14 uppercase pointer">
+                                <span class="font18 text-white icon-shopcart right15"></span>
+                                buy now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="columns top20 small-12 medium-6 large-3 product-cart">
+                        <div>
+                            <ul class="product-breadcrumb">
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="all armchairs">Chairs</a></li>
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="items made ​​of wood">Wood</a></li>
+                            </ul>
+                            <div class="text-center top20">
+                                <img src="../img/products/black-wood-chair.jpg" alt="a modern armchairs made of wood"/>
+                            </div>
+                            <p class="small-12 text-center text-dark-gray font16">Black and Wood Chair <br/> <span class="font18 text-black">$ 150,00</span></p>
+                            <button class="reset button secondary product-button round small-push-2 small-8 condensed font14 uppercase pointer">
+                                <span class="font18 text-white icon-shopcart right15"></span>
+                                buy now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="columns top20 small-12 medium-6 large-3 product-cart">
+                        <div>
+                            <ul class="product-breadcrumb">
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="all armchairs">Chair</a></li>
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="items made ​​of wood">Wood</a></li>
+                            </ul>
+                            <div class="text-center top20">
+                                <img src="../img/products/wood-design-chair.jpg" alt="a modern armchairs made of wood"/>
+                            </div>
+                            <p class="small-12 text-center text-dark-gray font16">Wood Design Chair <br/> <span class="font18 text-black">$ 150,00</span></p>
+                            <button class="reset button secondary product-button round small-push-2 small-8 condensed font14 uppercase pointer">
+                                <span class="font18 text-white icon-shopcart right15"></span>
+                                buy now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="columns top20 small-12 medium-6 large-3 product-cart">
+                        <div>
+                            <ul class="product-breadcrumb">
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="all armchairs">Chair</a></li>
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="items made ​​of wood">Foam</a></li>
+                            </ul>
+                            <div class="text-center top20">
+                                <img src="../img/products/premium-design-chair.jpg" alt="a modern armchairs made of wood"/>
+                            </div>
+                            <p class="small-12 text-center text-dark-gray font16">Premium Design Chair <br/> <span class="font18 text-black">$ 150,00</span></p>
+                            <button class="reset button secondary product-button round small-push-2 small-8 condensed font14 uppercase pointer">
+                                <span class="font18 text-white icon-shopcart right15"></span>
+                                buy now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="columns top20 small-12 medium-6 large-3 product-cart">
+                        <div>
+                            <ul class="product-breadcrumb">
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="all armchairs">Chair</a></li>
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="items made ​​of wood">Wood</a></li>
+                            </ul>
+                            <div class="text-center top20">
+                                <img src="../img/products/white-wood-chair.jpg" alt="a modern armchairs made of wood"/>
+                            </div>
+                            <p class="small-12 text-center text-dark-gray font16">White and Wood Chair <br/> <span class="font18 text-black">$ 150,00</span></p>
+                            <button class="reset button secondary product-button round small-push-2 small-8 condensed font14 uppercase pointer">
+                                <span class="font18 text-white icon-shopcart right15"></span>
+                                buy now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="columns top20 small-12 medium-6 large-3 product-cart">
+                        <div>
+                            <ul class="product-breadcrumb">
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="all armchairs">Chairs</a></li>
+                                <li><a class="bold font12 text-medium-gray uppercase" href="#" title="items made ​​of wood">Wood</a></li>
+                            </ul>
+                            <div class="text-center top20">
+                                <img src="../img/products/black-wood-chair.jpg" alt="a modern armchairs made of wood"/>
+                            </div>
+                            <p class="small-12 text-center text-dark-gray font16">Black and Wood Chair <br/> <span class="font18 text-black">$ 150,00</span></p>
+                            <button class="reset button secondary product-button round small-push-2 small-8 condensed font14 uppercase pointer">
+                                <span class="font18 text-white icon-shopcart right15"></span>
+                                buy now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer" role="contentinfo">
+        <section class="footer-about-us">
+            <div class="row">
+                <div class="small-12 large-11 large-centered">
+                    <div class="float-left small-12">
+                        <h2 class="small-12 text-center text-white font25 uppercase about-us-title">About us</h2>
+                        <p class="small-9 small-centered text-center text-white font20">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-copyright">
+            <h6 class="float-left small-12 text-center font16 text-dark-gray">
+                <span class="icon-furniture-logo text-medium-gray font60 right20"></span>
+                Copyright 2016 - all rights reserved
+            </h6>
+        </section>
+    </footer>
+
+    <script src="../js/vendor/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="../js/vendor/slick.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).on('ready', function() {
+            $('.swipe-gallery').slick({
+                dots: true,
+                arrows: false,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 640,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

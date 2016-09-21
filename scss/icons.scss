@@ -1,0 +1,37 @@
+/* ==========================================================================
+   Fontface Icons
+========================================================================== */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fontface/icomoon/fonts/icomoon.eot?d5eqyu');
+  src:  url('../fontface/icomoon/fonts/icomoon.eot?d5eqyu#iefix') format('embedded-opentype'),
+  url('../fontface/icomoon/fonts/icomoon.ttf?d5eqyu') format('truetype'),
+  url('../fontface/icomoon/fonts/icomoon.woff?d5eqyu') format('woff'),
+  url('../fontface/icomoon/fonts/icomoon.svg?d5eqyu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-furniture-logo:before {
+  content: "\e900";
+}
+.icon-shopcart:before {
+  content: "\e93a";
+}
+
